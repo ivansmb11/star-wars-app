@@ -4,11 +4,10 @@
       <ion-toolbar>
         <ion-title>Personajes de Star Wars</ion-title>
       </ion-toolbar>
+      <ion-searchbar v-model="searchText" placeholder="Buscar por nombre"></ion-searchbar>
     </ion-header>
 
     <ion-content>
-      <ion-searchbar v-model="searchText" placeholder="Buscar por nombre"></ion-searchbar>
-
       <ion-segment v-model="filter" color="primary">
         <ion-segment-button value="all">Todos</ion-segment-button>
         <ion-segment-button value="male">Masculino</ion-segment-button>

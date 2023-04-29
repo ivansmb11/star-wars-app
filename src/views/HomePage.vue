@@ -10,17 +10,13 @@
     </ion-header>
 
     <ion-content>
-      <p>Bienvenido a la aplicación de Star Wars</p>
+      <h2 style="text-align: center;">Bienvenido a la aplicación de Star Wars</h2>
 
-      <ion-item>
-        <ion-label position="floating">Nombre</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
+      <div style="display: flex; justify-content: center;">
+        <img src="../assets/starwarsLogo.png" alt="star wars logo">
+      </div>
 
-      <ion-item>
-        <ion-label position="floating">Correo electrónico</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
+      <p style="text-align: center;">Desarrollada por Ivan Mendoza, José Contró y Pablo Botello.</p>
     </ion-content>
 
     <ion-menu side="start" content-id="main">
@@ -44,11 +40,11 @@
 </template>
 
 <script>
-import { IonPage, IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent, IonMenu, IonList, IonItem, IonIcon, IonLabel, IonRouterOutlet, IonInput } from '@ionic/vue';
+import { IonPage, IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent, IonMenu, IonList, IonItem, IonIcon, IonLabel, IonRouterOutlet } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'HomePage',
-  components: { IonPage, IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent, IonMenu, IonList, IonItem, IonIcon, IonLabel, IonRouterOutlet, IonInput },
+  components: { IonPage, IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent, IonMenu, IonList, IonItem, IonIcon, IonLabel, IonRouterOutlet },
 });
 </script>
